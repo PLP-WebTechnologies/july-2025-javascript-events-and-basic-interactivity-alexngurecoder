@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>JavaScript Assignment</h1>
+
+  <!-- Part 1: Event Handling-->
+  <section>
+    <h2>Event Handling</h2>
+
+    <!-- onclick -->
+    <button id="colorButton">Change Background</button>
+
+    <!-- onmouseover -->
+    <p id="hoverText">Hover over this text to highlight it!</p>
+
+    <!-- onchange -->
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="nameDisplay"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements-->
+  <section>
+    <h2>Interactive Elements</h2>
+
+    <!-- Dark Mode Toggle -->
+    <button onclick="toggleTheme()">Toggle Dark Mode</button>
+
+    <!-- Counter -->
+    <p>Click Counter: <span id="count">0</span></p>
+    <button id="increaseBtn">Increase</button>
+    <button id="resetBtn">Reset</button>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown">
+      <button id="dropdownBtn">Menu</button>
+      <div id="dropdownContent" class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Part 3: Form Validation-->
+  <section>
+    <h2>Sign Up Form</h2>
+    <form onsubmit="return validateSignUp()">
+      <label>
+        Username:
+        <input type="text" id="username">
+      </label><br><br>
+
+      <label>
+        Email:
+        <input type="text" id="email">
+      </label><br><br>
+
+      <label>
+        Password:
+        <input type="password" id="password">
+      </label><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
